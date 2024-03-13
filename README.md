@@ -1,166 +1,188 @@
-# JPL Open Source Rover Project
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JPL 开源漫游者项目</font></font></h1><a id="user-content-jpl-open-source-rover-project" class="anchor" aria-label="永久链接：JPL 开源漫游者项目" href="#jpl-open-source-rover-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：有关 OSR 的先前主要版本，请参阅</font></font><a href="https://github.com/nasa-jpl/open-source-rover/tree/v3.0.0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v3.1.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/lit_up_shot.jpg"><img src="/nasa-jpl/open-source-rover/raw/master/images/lit_up_shot.jpg" alt="" style="max-width: 100%;"></a></th>
+<th><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/osr-side-outside.jpg"><img src="/nasa-jpl/open-source-rover/raw/master/images/osr-side-outside.jpg" alt="" style="max-width: 100%;"></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/rover.png"><img src="/nasa-jpl/open-source-rover/raw/master/images/rover.png" alt="" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/osr_onshape.png"><img src="/nasa-jpl/open-source-rover/raw/master/images/osr_onshape.png" alt="" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JPL 开源漫游车是 JPL 用于探索火星表面的 6 轮漫游车设计的开源、自行构建的缩小版。</font><font style="vertical-align: inherit;">开源 Rover 完全采用消费者现成 (COTS) 部件设计。</font><font style="vertical-align: inherit;">该项目旨在为那些想要涉足机械工程、软件、电子、机器人技术的人们提供教学和学习体验，同时也是崎岖地形的绝佳研究平台。</font><font style="vertical-align: inherit;">不需要任何先验技能或知识。</font></font></p>
+<p dir="auto"><a href="https://youtu.be/exHqc_Vuifw" rel="nofollow"><img src="/nasa-jpl/open-source-rover/raw/master/images/youtube-thumbnail.png" alt="OSR2 实际操作的 YouTube 视频" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/nasa-jpl/open-source-rover/blob/master/examples/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到一些社区构建的画廊，包括早期版本的流动站</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于 OSR</font></font></h2><a id="user-content-about-the-osr" class="anchor" aria-label="永久链接：关于 OSR" href="#about-the-osr"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动机</font></font></h3><a id="user-content-motivation" class="anchor" aria-label="永久链接：动机" href="#motivation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">喷气推进实验室始终致力于激励下一代科学家、工程师和机器人专家，帮助我们探索和了解太阳系（以及更远的地方！）。</font><font style="vertical-align: inherit;">我们发布这款漫游车的计划是为了尝试为初露头角的爱好者提供一个有趣的机器人项目，帮助他们以更低的成本更快地教授和参与机器人技术。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乍看上去</font></font></h3><a id="user-content-at-a-glance" class="anchor" aria-label="永久链接： 概览" href="#at-a-glance"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/osr-onshape.gif" data-target="animated-image.originalLink"><img src="/nasa-jpl/open-source-rover/raw/master/images/osr-onshape.gif" alt="" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://github.com/nasa-jpl/open-source-rover/blob/master/images/osr-onshape.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="osr-onshape.gif" class="AnimatedImagePlayer-animatedImage" src="https://github.com/nasa-jpl/open-source-rover/raw/master/images/osr-onshape.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="561"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="播放 osr-onshape.gif" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="播放 osr-onshape.gif">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开 osr-onshape.gif" class="AnimatedImagePlayer-button" href="https://github.com/nasa-jpl/open-source-rover/blob/master/images/osr-onshape.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
 
-**NOTE**: For the previous major version of the OSR, please see [v3.1.0](https://github.com/nasa-jpl/open-source-rover/tree/v3.0.0).
-
-| ![](images/lit_up_shot.jpg) | ![](images/osr-side-outside.jpg) |
-| --------------------------- | --------------------------- |
-| ![](images/rover.png)       | ![](images/osr_onshape.png) |
-
-The JPL Open Source Rover is an open source, build it yourself, scaled down version of the 6 wheel rover design that JPL uses to explore the surface of Mars. The Open Source Rover is designed entirely out of consumer off the shelf (COTS) parts. This project is intended to be a teaching and learning experience for those who want to get involved in mechanical engineering, software, electronics, robotics but is also an excellent research platform for rugged terrain. No prior skills or knowledge is required.
-
-[![Youtube video of OSR2 in action](images/youtube-thumbnail.png)](https://youtu.be/exHqc_Vuifw)
-
-A gallery of some community builds including previous versions of the rover can be found [here](examples/README.md).
-
-## About the OSR
-
-### Motivation
-
-JPL is always looking to inspire the next generation of scientists, engineers, and roboticists to help us explore and learn about our solar system (and beyond!). We release the plans for this rover as a way to try and give budding enthusiasts a fun robotics project that will help teach them and get them involved in robotics sooner and at a lower cost.
-
-### At a glance
-
-![](images/osr-onshape.gif)
-<!-- TODO: insert terminology into gif or image: rocker bogie, ... -->
-
-The OSR has been around since 2017 and has undergone many iterations. It is a premium and robust robot with a unique look, high customizability, and powerful abilities. The hardware and electronics were designed with expansions like a head display and robot arm in mind.
-
-| spec                | value                                                                   |
-| ------------------- | ----------------------------------------------------------------------- |
-| top speed           | ~1.6m/s (~slow running, subject to motor selection                      |
-| nb motors           | 10                                                                      |
-| structural material | aluminum                                                                |
-| total cost          | [~$1600](parts_list/README.md) (about the cost of a TurtleBot 3 Waffle) |
-
-![](images/rover.png)
-
-The OSR mostly uses parts from [GoBilda](https://www.gobilda.com) for the mechanical assembly. For GoBilda's (international) shipping options, see [here](https://www.gobilda.com/shipping-policy/).
-
-Other open-source, cheaper alternatives exist but are slower, less strong, and are more fragile. See [Additional Projects](#additional-projects).
-
-### Features
-
-This rover is designed to function similarly to the 6 wheel rover designs on Mars and employs a few of the major driving mechanics that the mars rovers use to traverse rocky surfaces:
-
-* **Rocker-Bogie:** The Rocker-Bogie suspension system allows all 6 wheels to continually be in contact with the ground while climbing over obstacles
-* **Differential Pivot:** Allows weight to be mechanically offloaded from one side of the rover to the other while climbing
-* **6-Wheel Ackerman Steering:** Driving and steering/turning mechanism that governs where the wheels point and how fast each of them will move.
-
-A Raspberry Pi acts as the "brain" of this rover for its versatility, accessibility, simplicity, and ability to add and upgrade your own modifications. Any method with which you can communicate with a Raspberry Pi (bluetooth, WiFi, USB devices, etc) can be interfaced into the control system of the robot.
-
-For a 7.2Ah battery and with some driving on rough terrain, expect to get at least 3 hours of drive time. Below chart was recorded while driving on rocky terrain and plots voltage, current draw, and commanded velocity over time. When the voltage drops below 13-14V, the rover will power down. You can increase drive time by getting a bigger battery and/or by having the rover carry a second battery that can be swapped out.
-
-> *WARNING*: Be careful to not discharge a LiPo battery too far as that drastically lowers the lifetime of your battery and can potentially make it hard or impossible to recharge.
-
-![power usage chart](images/power_usage_osr.png)
-
-## Join a community of hundreds of builders
-
-Considering building one yourself? The best way to ask questions, reach maintainers, learn about modifications, and join the community of Open Source Rover builders is to join our Slack group:
-
-<a href="https://join.slack.com/t/opensourcerover/shared_invite/zt-mfe0viua-FhcYsNb3S9vUra99uF3IBw">
-  <center><img src="images/slack_logo.png" height="80")/></center>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OSR 自 2017 年推出以来，经历了多次迭代。</font><font style="vertical-align: inherit;">它是一款优质且坚固的机器人，具有独特的外观、高度可定制性和强大的能力。</font><font style="vertical-align: inherit;">硬件和电子设备的设计考虑了头部显示器和机器人手臂等扩展。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">规格</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">价值</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最高时速</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">~1.6m/s（~慢速运行，取决于电机选择</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">铌电机</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结构材料</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">铝</font></font></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总成本</font></font></td>
+<td><a href="/nasa-jpl/open-source-rover/blob/master/parts_list/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">约 1600 美元</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（大约是一个 TurtleBot 3 华夫饼的成本）</font></font></td>
+</tr>
+</tbody>
+</table>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/rover.png"><img src="/nasa-jpl/open-source-rover/raw/master/images/rover.png" alt="" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OSR 主要使用</font></font><a href="https://www.gobilda.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GoBilda</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的零件进行机械组装。</font><font style="vertical-align: inherit;">有关 GoBilda 的（国际）运输选项，请参阅</font></font><a href="https://www.gobilda.com/shipping-policy/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存在其他开源、更便宜的替代方案，但速度较慢、不够强大且更脆弱。</font><font style="vertical-align: inherit;">请参阅</font></font><a href="#additional-projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他项目</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h3><a id="user-content-features" class="anchor" aria-label="永久链接：特点" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该漫游车的设计功能与火星上的 6 轮漫游车设计类似，并采用了火星漫游车用于穿越岩石表面的一些主要驱动机制：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">摇臂转向架：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">摇臂转向架悬架系统允许所有 6 个车轮在爬过障碍物时持续与地面接触</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">差速枢轴：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在爬升时允许重量从流动站的一侧机械卸载到另一侧</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 轮阿克曼转向系统：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">驱动和转向/转向机构，控制车轮的指向以及每个车轮的移动速度。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Raspberry Pi 因其多功能性、可访问性、简单性以及添加和升级您自己的修改的能力而充当了该漫游车的“大脑”。</font><font style="vertical-align: inherit;">任何可以与 Raspberry Pi 通信的方法（蓝牙、WiFi、USB 设备等）都可以连接到机器人的控制系统。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 7.2Ah 电池并在崎岖地形上行驶，预计至少可行驶 3 小时。</font><font style="vertical-align: inherit;">下图是在岩石地形上行驶时记录的，并绘制了随时间变化的电压、电流消耗和命令速度。</font><font style="vertical-align: inherit;">当电压低于 13-14V 时，流动站将断电。</font><font style="vertical-align: inherit;">您可以通过使用更大的电池和/或让流动站携带可更换的第二块电池来增加行驶时间。</font></font></p>
+<blockquote>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：小心不要对锂聚合物电池放电过度，否则会大大缩短电池的使用寿命，并可能导致充电困难或无法充电。</font></font></p>
+</blockquote>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/power_usage_osr.png"><img src="/nasa-jpl/open-source-rover/raw/master/images/power_usage_osr.png" alt="电量使用图" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入由数百名构建者组成的社区</font></font></h2><a id="user-content-join-a-community-of-hundreds-of-builders" class="anchor" aria-label="永久链接：加入由数百名构建者组成的社区" href="#join-a-community-of-hundreds-of-builders"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">考虑自己建造一个吗？</font><font style="vertical-align: inherit;">提出问题、联系维护人员、了解修改以及加入开源 Rover 构建者社区的最佳方式是加入我们的 Slack 小组：</font></font></p>
+<a href="https://join.slack.com/t/opensourcerover/shared_invite/zt-mfe0viua-FhcYsNb3S9vUra99uF3IBw" rel="nofollow">
+  <img src="/nasa-jpl/open-source-rover/raw/master/images/slack_logo.png" height="80" style="max-width: 100%;">
 </a>
-
-**Note: JPL and Caltech have no official affiliation with this forum; it is run by individuals of the general public.** On these you can ask questions if you need help or clarification on any aspects of the project.  Additionally, you can post and promote any modifications or addons that you have created on this project. We highly encourage additions and modifications to be posted so that this project and community can grow.
-
-### Maintenance Status
-
-As an open-source hardware project, the rover is continuously improving. Please check [issues](https://github.com/nasa-jpl/open-source-rover/issues), [pull requests](https://github.com/nasa-jpl/open-source-rover/projects), and the Slack forum to see if any big changes are expected soon. The OSR project is proud to be Open-Source Hardware certified!
-
-[![OSHW certification US002551](images/OSHWA_mark.png)](https://certification.oshwa.org/us002551.html)
-
-### Online 3D Model
-
-You can view a 3D model of the latest version of the rover in your browser [at OnShape](https://cad.onshape.com/documents/e4f00b1a3d2edb1a84bbba1c/w/8ab8f394324bcc586236ef5d/e/9191e5ad2a70f387b419bc55?renderMode=0&uiState=645ede92f3a1a9205158b296).
-
-### Skills Necessary
-
-This project has elements in mechanical assembly/fabrication, uses a host of electrical components, and has software that will run it all. In order to complete this project, you will need to have some experience in the following:
-
-* **Fabrication/Machining:** All parts are Consumer Off-The-Shelf (COTS) parts and **no metal machining should be required** to complete the 'base' version of the rover. However for any optional expansions, it may be useful to have access to the following skills/tools:
-  * Metal cutting using band saw/dremel
-  * Drilling using drill press/hand drill
-  * Filing and sanding for part cleanup
-  * General Fabrication/Machining Safety
-* **Electronics:** This project uses components like motors, motor controllers, and batteries. While prior experience with the following skills is not required, having access to someone who can help will save a lot of time:
-  * Soldering
-  * Electrical debugging
-  * Wiring
-  * Electrical Safety
-* **Software:** The rover's brain is a Raspberry Pi. All code can be found in the [osr-rover-code](https://github.com/nasa-jpl/osr-rover-code) repository along with step-by-step instructions to set it up. Basic familiarity with Linux, ROS, Git, and Python will be helpful though.
-
-Most of the above are skills that you can learn and pick up fairly quickly from watching videos and doing research on the internet, and throughout the project we try to give supplemental information on some of these as well. See the build documents for more information.
-
-### Tools Necessary
-
-This project assumes you have some standard tools to help assemble the project. If you do not have any of the optional tools, we provide examples of online services that you can use to have the parts fabricated and sent to you.
-
-#### Mandatory tools
-
-* Metric hex keys
-* Pliers
-* Wire Snips
-* Wire Strippers
-* Solder Iron
-* Solder
-* Digital Multimeter
-* Wire strippers, e.g. [these](https://www.amazon.com/dp/B07DWVSR41/?coliid=ISMG8XMBILGFK&colid=1IM7RHK25RIBB&psc=0&ref_=lv_vv_lig_dp_it)
-
-#### Optional Tools
-
-* 3D printer
-* Laser Cutter (for the body plates, online services available)
-* Benchtop Power Supply (to test without using battery)
-* Items for operating a Raspberry Pi (Keyboard, mouse, monitor, 5V micro USB power adapter)
-
-### Expected time commitment
-
-In our experience, this project takes no less than 100 person-hours to build, and depending on the familiarity and skill level of those involved could be significantly more. Experienced builders may be able to build this project in this amount of time.  However, this project is generally meant to be a teaching and learning tool.  Throughout the documentation, we try to give supplemental information for those who might be new to this kind of project.
-
-## Getting Started
-
-### Rover Build Roadmap
-
-* **Stage 1:** [Order parts](#ordering-parts). You'll want to get started on this ASAP!
-
-* **Stage 2:** [Create the wiring](electrical/wiring/README.md). The cables connect the Printed Circuit Board (PCB) in the body to each motor and integrate into the rocker-bogie and corner assemblies so they need to be built first.
-
-* **Stage 3:** [Make the electronics](electrical/pcb/README.md): Soldering the PCB and installing into the rover along with peripheral connections. We'll also use the wiring to test your PCBs.
-
-* **Stage 4:** [Make the mechanical assemblies](mechanical/README.md): the body, the two rocker-bogies, the drive and corner motor assemblies. The instructions will guide you through how to do these step by step while integrating the cabling from Stage 2. You'll then attach them into something that will start to look like a rover!
-
-* **Stage 5:** Setting up and configuring the operating system rover code. The [Rover Code repo](https://github.com/nasa-jpl/osr-rover-code)'s README files will walk you through all necessary steps for getting the rover software up and running on the Raspberry Pi. These steps can be completed at any point during the project, all the way up to when all the electronics and mechanical parts are completed and you are ready to start driving and controlling the robot.
-
-* **What's next?** Add your own upgrades! We chose Raspberry Pi as the brain of the project so that it should be easy to add, change, and upgrade to build exciting things on top of this already cool robot.  Some upgrade ideas to get you brainstorming: sonar for collision detection, IMU for orientation / closed-loop driving / obstacle mapping, camera for object identification and tracking, sensor packages (temperature, pressure, humidity), solar panels, or even a robotic arm!
-
-### Ordering parts
-
-#### Parts Lists
-
-The [Parts List Readme](parts_list/README.md) contains all the parts necessary to build the entirety of the robot as it is listed in our documentation.
-
-Note that educational builders may apply for a 15% discount at GoBilda by filling out [this form](https://form.123formbuilder.com/6143945/open-source-rover-edu-form). Make sure you do this on time as processing times may vary. 
-
-You can select higher RPM motors (to drive your rover faster) at the sacrifice of max stall torque. A selection of motors that would integrate easily with the rest of the suggested rover design can be found at [GoBilda - 5203 series](https://www.gobilda.com/yellow-jacket-planetary-gear-motors/).
-The rover design and the software can accommodate different wheel sizes if you find wheels you like better.
-
-## Additional Projects
-
-Take a look at these alternative Mars rover replicas:
-
-* [Sawppy Rover](https://hackaday.io/project/158208-sawppy-the-rover)
-* [ESA ExoMy](https://github.com/0xD0M1M0/ExoMy)
-* [3D printed and driveable Curiosity/Perseverance inspired Rover](https://github.com/jakkra/Mars-Rover)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=nasa-jpl/open-source-rover&type=Date)](https://star-history.com/#nasa-jpl/open-source-rover&Date)
-
-## Disclaimer
-
-Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement by the United States Government or the Jet Propulsion Laboratory, California Institute of Technology. Government sponsorship acknowledged.
-
-Licensed under [Apache License 2.0](LICENSE.txt).
-
-![OSR on the beach at night](images/beach_osr.jpg)
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注：JPL 和加州理工学院与本论坛没有官方关系；</font><font style="vertical-align: inherit;">它由公众个人管理。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您需要帮助或澄清项目的任何方面，您可以就这些问题提出问题。</font><font style="vertical-align: inherit;">此外，您可以发布和推广您在此项目上创建的任何修改或插件。</font><font style="vertical-align: inherit;">我们强烈鼓励发布添加和修改，以便该项目和社区能够发展。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护状态</font></font></h3><a id="user-content-maintenance-status" class="anchor" aria-label="永久链接：维护状态" href="#maintenance-status"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为一个开源硬件项目，流动站正在不断改进。</font><font style="vertical-align: inherit;">请检查</font></font><a href="https://github.com/nasa-jpl/open-source-rover/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/nasa-jpl/open-source-rover/projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拉取请求</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和 Slack 论坛，看看是否会很快发生任何重大变化。</font><font style="vertical-align: inherit;">OSR 项目很荣幸获得开源硬件认证！</font></font></p>
+<p dir="auto"><a href="https://certification.oshwa.org/us002551.html" rel="nofollow"><img src="/nasa-jpl/open-source-rover/raw/master/images/OSHWA_mark.png" alt="OSHW 认证 US002551" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在线3D模型</font></font></h3><a id="user-content-online-3d-model" class="anchor" aria-label="永久链接：在线 3D 模型" href="#online-3d-model"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://cad.onshape.com/documents/e4f00b1a3d2edb1a84bbba1c/w/8ab8f394324bcc586236ef5d/e/9191e5ad2a70f387b419bc55?renderMode=0&amp;uiState=645ede92f3a1a9205158b296" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在浏览器中的OnShape</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看最新版本流动站的 3D 模型</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">必要的技能</font></font></h3><a id="user-content-skills-necessary" class="anchor" aria-label="永久链接：必要的技能" href="#skills-necessary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目包含机械装配/制造元素，使用大量电气元件，并拥有运行这一切的软件。</font><font style="vertical-align: inherit;">为了完成这个项目，您需要具备以下方面的经验：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制造/机加工：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有零件均为消费级现成 (COTS) 零件，</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无需金属加工即可</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完成流动站的“基础”版本。</font><font style="vertical-align: inherit;">但是，对于任何可选扩展，访问以下技能/工具可能会很有用：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用带锯/Dremel 进行金属切割</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用钻床/手钻钻孔</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于零件清理的锉磨和打磨</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一般制造/加工安全</font></font></li>
+</ul>
+</li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子产品：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目使用电机、电机控制器和电池等组件。</font><font style="vertical-align: inherit;">虽然不需要具备以下技能的经验，但联系可以提供帮助的人会节省大量时间：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">焊接</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电气调试</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接线</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电气安全</font></font></li>
+</ul>
+</li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">火星车的大脑是一个 Raspberry Pi。</font></font><a href="https://github.com/nasa-jpl/osr-rover-code"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有代码都可以在osr-rover-code</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库中找到</font><font style="vertical-align: inherit;">，以及设置它的分步说明。</font><font style="vertical-align: inherit;">不过，对 Linux、ROS、Git 和 Python 的基本熟悉会有所帮助。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上述大部分技能都是您可以通过观看视频和在互联网上进行研究来相当快地学习和掌握的技能，并且在整个项目中，我们也尝试提供其中一些的补充信息。</font><font style="vertical-align: inherit;">请参阅构建文档以获取更多信息。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">必要的工具</font></font></h3><a id="user-content-tools-necessary" class="anchor" aria-label="永久链接：必要的工具" href="#tools-necessary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目假设您有一些标准工具来帮助组装该项目。</font><font style="vertical-align: inherit;">如果您没有任何可选工具，我们提供在线服务示例，您可以使用这些服务来制造零件并将其发送给您。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">必备工具</font></font></h4><a id="user-content-mandatory-tools" class="anchor" aria-label="永久链接：强制性工具" href="#mandatory-tools"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公制六角扳手</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">钳</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">钢丝剪</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">剥线钳</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">烙铁</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">焊接</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数字万用表</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">剥线钳，例如</font></font><a href="https://www.amazon.com/dp/B07DWVSR41/?coliid=ISMG8XMBILGFK&amp;colid=1IM7RHK25RIBB&amp;psc=0&amp;ref_=lv_vv_lig_dp_it" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选工具</font></font></h4><a id="user-content-optional-tools" class="anchor" aria-label="永久链接：可选工具" href="#optional-tools"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D打印机</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">激光切割机（用于车身板，可提供在线服务）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">台式电源（不使用电池进行测试）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于操作 Raspberry Pi 的物品（键盘、鼠标、显示器、5V micro USB 电源适配器）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预计时间投入</font></font></h3><a id="user-content-expected-time-commitment" class="anchor" aria-label="永久链接：预计时间投入" href="#expected-time-commitment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据我们的经验，该项目的构建时间不少于 100 人时，并且根据相关人员的熟悉程度和技能水平，时间可能会长得多。</font><font style="vertical-align: inherit;">有经验的建造者也许能够在这段时间内建造这个项目。</font><font style="vertical-align: inherit;">然而，这个项目通常是一个教学和学习工具。</font><font style="vertical-align: inherit;">在整个文档中，我们尝试为那些可能不熟悉此类项目的人提供补充信息。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接：开始使用" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">漫游者构建路线图</font></font></h3><a id="user-content-rover-build-roadmap" class="anchor" aria-label="永久链接：Rover 构建路线图" href="#rover-build-roadmap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一阶段：</font></font></strong> <a href="#ordering-parts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">订购零件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">您会希望尽快开始！</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 阶段：</font></font></strong> <a href="/nasa-jpl/open-source-rover/blob/master/electrical/wiring/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建接线</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">电缆将车身中的印刷电路板 (PCB) 连接到每个电机，并集成到摇臂转向架和角组件中，因此需要首先构建它们。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 3 阶段：</font></font></strong> <a href="/nasa-jpl/open-source-rover/blob/master/electrical/pcb/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作电子设备</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：焊接 PCB 并与外围连接一起安装到流动站中。</font><font style="vertical-align: inherit;">我们还将使用接线来测试您的 PCB。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 4 阶段：</font></font></strong> <a href="/nasa-jpl/open-source-rover/blob/master/mechanical/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作机械组件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：车身、两个摇臂转向架、驱动器和角电机组件。</font><font style="vertical-align: inherit;">这些说明将指导您逐步完成这些操作，同时集成第 2 阶段的布线。然后您将它们连接到看起来像流动站的东西上！</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 5 阶段：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置和配置操作系统流动站代码。</font><font style="vertical-align: inherit;">Rover</font></font><a href="https://github.com/nasa-jpl/osr-rover-code"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的自述文件将引导您完成在 Raspberry Pi 上启动并运行 Rover 软件的所有必要步骤。</font><font style="vertical-align: inherit;">这些步骤可以在项目期间的任何时候完成，一直到所有电子和机械部件完成并且您准备好开始驱动和控制机器人时为止。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下一步是什么？</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加您自己的升级！</font><font style="vertical-align: inherit;">我们选择 Raspberry Pi 作为该项目的大脑，这样它就应该很容易添加、更改和升级，以便在这个已经很酷的机器人上构建令人兴奋的东西。</font><font style="vertical-align: inherit;">一些让你集思广益的升级想法：用于碰撞检测的声纳、用于定向/闭环驾驶/障碍物测绘的 IMU、用于物体识别和跟踪的摄像头、传感器包（温度、压力、湿度）、太阳能电池板，甚至机械臂！</font></font></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">订购零件</font></font></h3><a id="user-content-ordering-parts" class="anchor" aria-label="永久链接：订购零件" href="#ordering-parts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">零件清单</font></font></h4><a id="user-content-parts-lists" class="anchor" aria-label="永久链接：零件清单" href="#parts-lists"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">零件</font></font><a href="/nasa-jpl/open-source-rover/blob/master/parts_list/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">清单自述文件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包含构建整个机器人所需的所有零件，如我们的文档中所列。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://form.123formbuilder.com/6143945/open-source-rover-edu-form" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，教育建设者可以通过填写此表格</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 GoBilda 申请 15% 的折扣</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">请确保您按时完成此操作，因为处理时间可能会有所不同。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以选择更高转速的电机（以更快地驱动流动站），但会牺牲最大失速扭矩。</font></font><a href="https://www.gobilda.com/yellow-jacket-planetary-gear-motors/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GoBilda-5203 系列</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供了一系列可轻松与建议的流动站设计的其余部分集成的电机</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果您找到更喜欢的车轮，流动站设计和软件可以适应不同的车轮尺寸。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他项目</font></font></h2><a id="user-content-additional-projects" class="anchor" aria-label="永久链接：其他项目" href="#additional-projects"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">看看这些替代的火星漫游者复制品：</font></font></p>
+<ul dir="auto">
+<li><a href="https://hackaday.io/project/158208-sawppy-the-rover" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多汁的流浪者</font></font></a></li>
+<li><a href="https://github.com/0xD0M1M0/ExoMy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欧空局ExoMy</font></font></a></li>
+<li><a href="https://github.com/jakkra/Mars-Rover"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D 打印的可驾驶好奇号/毅力号火星车</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">明星历史</font></font></h2><a id="user-content-star-history" class="anchor" aria-label="永久链接：明星历史" href="#star-history"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://star-history.com/#nasa-jpl/open-source-rover&amp;Date" rel="nofollow"><img src="https://camo.githubusercontent.com/39919542d8be31c5f1d16e4a645cc610e34560126c0aa5c39a8fc15e4d220675/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d6e6173612d6a706c2f6f70656e2d736f757263652d726f76657226747970653d44617465" alt="明星历史图" data-canonical-src="https://api.star-history.com/svg?repos=nasa-jpl/open-source-rover&amp;type=Date" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免责声明</font></font></h2><a id="user-content-disclaimer" class="anchor" aria-label="永久链接：免责声明" href="#disclaimer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本文通过商品名称、商标、制造商或其他方式引用任何特定商业产品、流程或服务，并不构成或暗示其获得美国政府或加州理工学院喷气推进实验室的认可。</font><font style="vertical-align: inherit;">政府赞助得到承认。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据</font></font><a href="/nasa-jpl/open-source-rover/blob/master/LICENSE.txt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache License 2.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获得许可。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/nasa-jpl/open-source-rover/blob/master/images/beach_osr.jpg"><img src="/nasa-jpl/open-source-rover/raw/master/images/beach_osr.jpg" alt="晚上在海滩上的 OSR" style="max-width: 100%;"></a></p>
+</article></div>
